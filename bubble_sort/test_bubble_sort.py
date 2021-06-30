@@ -10,6 +10,12 @@ class BubbleSortTestCase(unittest.TestCase):
         bubble_sort(list)
         self.assertEqual([5, 7, 19, 25, 34, 41, 98], list)
 
+    def test_single_element_list(self):
+        """Test if the bubble sort works in a list with a single element."""
+        list = [5]
+        bubble_sort(list)
+        self.assertEqual([5], list)
+
 
 if __name__ == '__main__':
     unittest.main()
