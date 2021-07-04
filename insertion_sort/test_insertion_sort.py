@@ -1,6 +1,7 @@
 import unittest
 from insertion_sort import insertion_sort
 
+
 class InsertionSortTestCase(unittest.TestCase):
     """Tests for insertion sort."""
 
