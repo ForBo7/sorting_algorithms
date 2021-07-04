@@ -23,6 +23,14 @@ class InsertionSortTestCase(unittest.TestCase):
         insertion_sort(list)
         self.assertEqual([5], list)
 
+    def test_repeating_element_list(self):
+        """
+        Test if the insertion sort works in a list with repeating elements.
+        """
+        list = [4, 4, 1, 9, 3, 3, 3, 2]
+        insertion_sort(list)
+        self.assertEqual([1, 2, 3, 3, 3, 4, 4, 9], list)
+
 
 if __name__ == '__main__':
     unittest.main()
