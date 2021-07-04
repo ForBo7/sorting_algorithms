@@ -21,3 +21,7 @@ class InsertionSortTestCase(unittest.TestCase):
         list = [5]
         insertion_sort(list)
         self.assertEqual([5], list)
+
+
+if __name__ == '__main__':
+    unittest.main()
